@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台中港黃豆價格查詢表</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+<div class="icon-container">
+  <a href="index.html" id="main-menu-icon"><i class="fas fa-home"></i></a>
+  <a href="about.html" id="about-icon"><i class="fas fa-info-circle"></i></a>
+</div>
+<h1 class="title">台中港黃豆價格查詢表</h1>
+<div class="pp">
+  <p>選擇日期</p>
+</div>
+<div class="dropdown-container">
+  <div class="dropdown-item">
+    <label for="start-date-select">開始日期:</label>
+    <select id="start-date-select"></select>
+  </div>
+  <div class="dropdown-item">
+    <label for="end-date-select">結束日期:</label>
+    <select id="end-date-select"></select>
+  </div>
+</div>
+<button id="submit-btn">提交</button>
+<p id="selected-date"></p>
+<div id="price_area">
+  <canvas id="price-chart" width="800" height="400"></canvas> <!-- 調整寬度和高度 -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js.js"></script>
+</body>
+
+</html>
